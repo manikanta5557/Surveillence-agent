@@ -28,8 +28,8 @@ class EventAnalyzer:
         severity = "low"
 
         for obj in detected_objects:
-            event_type = f"{obj["type"]} detected"
-            description = f"{obj["type"]} spotted at {location}"
+            event_type = f"{obj["object"]} detected"
+            description = f"{obj["object"]} spotted at {location}"
             severity = "Medium" #this should be decided by agent
         
         if event_type:
